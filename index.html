@@ -157,19 +157,19 @@
     <img src="live.png" class="full active" alt="Patrocinadores Oficiales" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22800%22 height=%22600%22%3E%3Crect fill=%22%23333%22 width=%22800%22 height=%22600%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fill=%22white%22 text-anchor=%22middle%22 font-size=%2224%22%3EPatrocinadores Oficiales%3C/text%3E%3C/svg%3E%3C/svg%3E'">
   </div>
 
-  <div class="slide" data-duration="15000">
+  <div class="slide" data-duration="25000">
     <img src="rifa.png" class="full active" alt="Patrocinadores Oficiales" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22800%22 height=%22600%22%3E%3Crect fill=%22%23333%22 width=%22800%22 height=%22600%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fill=%22white%22 text-anchor=%22middle%22 font-size=%2224%22%3EPatrocinadores Oficiales%3C/text%3E%3C/svg%3E%3C/svg%3E'">
   </div>
 
 
   <!-- Slide 3: Reloj mundial -->
-  <div class="slide" data-duration="8000">
+  <div class="slide" data-duration="20000">
     <iframe src="hola.html"></iframe>
 
   </div>
 
   <!-- Slide 4: Fotos -->
-  <div class="slide" id="fotos" data-duration="8000">
+  <div class="slide" id="fotos" data-duration="15000">
     <div class="foto">
       <img src="nasa1.png" class="full active" alt="Evento en Tokio" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22800%22 height=%22600%22%3E%3Crect fill=%22%23222%22 width=%22800%22 height=%22600%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fill=%22white%22 text-anchor=%22middle%22 font-size=%2224%22%3ETokio, Japón%3C/text%3E%3C/svg%3E'">
       <div class="caption active">Congo, Africa</div>
@@ -193,6 +193,14 @@
     <div class="foto">
       <img src="nasa6.png" class="full" alt="Evento en Bogotá" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22800%22 height=%22600%22%3E%3Crect fill=%22%23222%22 width=%22800%22 height=%22600%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fill=%22white%22 text-anchor=%22middle%22 font-size=%2224%22%3EBogotá, Colombia%3C/text%3E%3C/svg%3E'">
       <div class="caption">Ghaziabad, India</div>
+    </div>
+    <div class="foto">
+      <img src="ulp.jpg" class="full" alt="Evento en Bogotá" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22800%22 height=%22600%22%3E%3Crect fill=%22%23222%22 width=%22800%22 height=%22600%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fill=%22white%22 text-anchor=%22middle%22 font-size=%2224%22%3EBogotá, Colombia%3C/text%3E%3C/svg%3E'">
+      <div class="caption">La punta, Argentina</div>
+    </div>
+    <div class="foto">
+      <img src="yucatanmx.jpg" class="full" alt="Evento en Bogotá" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22800%22 height=%22600%22%3E%3Crect fill=%22%23222%22 width=%22800%22 height=%22600%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fill=%22white%22 text-anchor=%22middle%22 font-size=%2224%22%3EBogotá, Colombia%3C/text%3E%3C/svg%3E'">
+      <div class="caption">Yucatán, México</div>
     </div>
   </div>
 
@@ -220,7 +228,7 @@
     }
     
     function startProgress() {
-      const duration = parseInt(slides[current].dataset.duration) || 8000;
+      const duration = parseInt(slides[current].dataset.duration) || 20000;
       startTime = Date.now();
       
       clearInterval(progressIntervalId);
@@ -280,7 +288,7 @@
     startProgress();
     
     // Main loop
-    const slideDuration = 8000;
+    const slideDuration = 20000;
     intervalId = setInterval(showNext, slideDuration);
     
     // Pause on spacebar (útil para presentaciones)
